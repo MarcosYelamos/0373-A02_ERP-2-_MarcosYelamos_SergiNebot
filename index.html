@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ERP 2 - Manual Odoo</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <h1>ERP 2</h1>
+  <div class="container">
+    <div class="section">
+      <!-- Sección Instalación -->
+      <h2>1. Instalación</h2>
+      <p>Ejecutamos el instalador descargado de la página <a href="https://www.odoo.com/es_ES/page/download" target="_blank">web oficial.</a></p>
+      <img src="./img/exe.png" alt="Archivo de descarga">
+      <br>
+      <p>Realizamos el proceso de instalación, teniendo en cuenta instalar PostgreSQL Server junto con Odoo Server.</p>
+      <img src="./img/instalacion_odoo1.png" alt="Instalación Odoo1">
+      <img src="./img/instalacion_odoo2.png" alt="Instalación Odoo2">
+      <br>
+      <p>Una vez acabado el proceso de preinstalación se empezará a instalar en nuestro ordenador.</p>
+      <img src="./img/instalacion_odoo3.png" alt="Instalación Odoo3">
+      <br>
+      <p>Una vez instalado pulsaremos en abrir directamente y nos llevará a nuestro navegador para seguir el proceso de instalación.</p>
+      <img src="./img/instalacion_odoo6.png" alt="Instalación Odoo4">
+      <br>
+      <p>En esta página deberemos rellenar los datos, es importante recordar la contraseña master password ya que será necesaria más tarde. Una vez rellenados le daremos a create database.</p>
+      <img src="./img/instalacion_odoo4.png" alt="Instalación Odoo5">
+      <br>
+      <p>Una vez creada la base de datos deberemos iniciar sesión:</p>
+      <img src="./img/instalacion_odoo5.png" alt="Instalación Odoo6">
+      <br>
+      <p>Luego de haber iniciado sesión nos llevará a la siguiente ventana que es donde se encuentran todos los móduloque podremos instalar (para instalarlos tendremos que dar al botón de activar que sale en recuadro de cada módulo):</p>
+      <img src="./img/instalacion_modulo1.png" alt="instalacion_modulo1">
+      <br>
+      <p>Nosotros instalaremos estos módulos(Compra e Inventario) debido a que hemos pensado que nuestra PYME va a manejar productos físicamente, es decir como una tienda de barrio. Con estos módulos podremos saber los productos que hay en stock, facturas del proveedor, control del abastecimiento. 
+      </p>
+
+      <!-- Sección Compra -->
+      <h2>2. Módulos</h2>
+      <h3>Compra</h3>
+      <img src="./img/modulo_compra.png" alt="modulo compra">
+      <br>
+      <p>En compra tenemos varios apartados a configurar:</p>
+      <img src="./img/modulo_compra2.png" alt="apartados a configurar">
+      <br>
+      <p>En pedidos tenemos las solicitudes de presupuesto, los pedidos de compra y los proveedores:</p>
+      <img src="./img/modulo_compra3.png" alt="pedidos">
+      <br>
+      <p>Solicitudes de presupuestos: sirven para pedir presupuestos a diferentes proveedores para así poder comparar precios y poder elegir el más adecuado para la empresa</p>
+      <img src="./img/modulo_compra4.png" alt="Solicitudes de presupuestos">
+      <br>
+      <p>Pedidos de compra: En esta apartado se harían los pedidos para comprar el material necesario para nuestros productos. El pedido se realizará después de haber comparado los presupuestos anteriormente.</p>
+      <img src="./img/modulo_compra5.png" alt="Pedidos de compra">
+      <br>
+      <p>Proveedores: Aquí tendremos nuestros proveedores habituales añadidos para poder consultarlos en cualquier momento o añadir nuevos. también conjuntamente su información como el teléfono, dirección, email …</p>
+      <img src="./img/modulo_compra6.png" alt="Proveedores">
+      <br>
+      <p>En productos tenemos en general todos los productos a vender y sus variantes como puede ser si están en varios colores, modelos, etc.</p>
+      <img src="./img/modulo_compra7.png" alt="productos">
+      <br>
+      <p>Ejemplo de algunos productos:</p>
+      <img src="./img/modulo_compra8.png" alt="Ejemplo de algunos productos">
+      <br>
+      <p>En informes solo tenemos disponible la compra:</p>
+      <img src="./img/modulo_compra9.png" alt="informes">
+      <br>
+      <p>En la compra podremos ver informes/gráficos y estadísticas sobre las compras.</p>
+      <img src="./img/modulo_compra10.png" alt="compra">
+      <br>
+      <p>Por último en configuración podremos ajustar la lista de precios de los proveedores, personalizar o cambiar algún aspecto a nuestro gusto, como añadir verificación en 3 pasos. podremos modificar las categorías de los productos, etc.</p>
+      <img src="./img/modulo_compra11.png" alt="configuración compra">
+    </div>
+
+    <div class="section">
+      <!-- Sección Inventario -->
+      <h3>Inventario</h3>
+      <img src="./img/modulo_inventario.png" alt="modulo inventario">
+      <br>
+      <p>En el apartado de operaciones podremos hacer la reposición, poner los ajustes en los inventarios, gestionar los traslados y desechar operaciones.</p>
+      <img src="./img/modulo_inventario1.png" alt="apartado_reposición">
+      <br>
+      <p>Dentro de reposición dándole a nuevo podremos poner el nombre del producto, el stock real, el pronóstico, la ruta preferida, la cantidad mínima y máxima, y la cantidad a pedir.</p>
+      <img src="./img/modulo_inventario2.png" alt="reposición">
+      <br>
+      <p>En la parte de ajuste de inventario tendremos que crear uno nuevo y al crearlo tendremos que añadir el producto, la cantidad real, la cantidad contada, la diferencia, la fecha programada y al usuario.</p>
+      <img src="./img/modulo_inventario3.png" alt="ajuste de inventario">
+      <br>
+      <p>Después en el de traslados creamos uno nuevo y podremos poner el contacto, la fecha programada, el tipo de operación, el documento de origen, el producto y la demanda.</p>
+      <img src="./img/modulo_inventario4.png" alt="traslados">
+      <br>
+      <p>En el ordenes de desecho cuando creemos uno nuevo tendremos que añadir el nombre, documento origen y cantidad del producto que queramos desechar.</p>
+      <img src="./img/modulo_inventario5.png" alt="órdenes de desecho">
+      <br>
+      <p>En los productos podremos tanto gestionar los productos que ya hayamos creado anteriormente, crear productos y eliminarlos en caso de que ya no se vayan a vender.</p>
+      <img src="./img/modulo_inventario6.png" alt="productos">
+      <br>
+      <p>A continuación en los informes podremos hacer los informes sobre el stock y también podremos ver el historial sobre los movimientos que hayamos hecho.</p>
+      <img src="./img/modulo_inventario7.png" alt="informes">
+      <br>
+      <p>En stock cuando le demos a nuevo podremos poner el nombre del producto, si puede ser vendido o comprado, el tipo del producto, el producto, la información general, el inventario, el precio de venta, el coste, referencia interna, código de barras, etc… </p>
+      <img src="./img/modulo_inventario8.png" alt="stock">
+      <br>
+      <p>Y lo que podremos hacer en configuración será configurar nuestros almacenes, tipos de operaciones, las categorías de los productos, las reglas de reabastecimiento y los ajustes del módulo de inventario.</p>
+      <img src="./img/modulo_inventario9.png" alt="configuración inventario">
+
+      <!-- Sección Copia de Seguridad -->
+      <h2>3. Copia de seguridad / Backup</h2>
+      <p>Para realizar la copia de seguridad de nuestro odoo con los módulos instalados deberemos entrar en el administrador de base de datos y seleccionar backup en la base de datos escogida.
+        La ruta para ver las bases de datos es:
+      </p>
+      <img src="./img/backup1.png" alt="Backup1">
+      <img src="./img/backup2.png" alt="Backup2">
+      <br>
+      <p>Una vez seleccionada la opción de backup deberemos introducir la contraseña maestra antes nombrada.</p>
+      <img src="./img/backup3.png" alt="Backup3">
+      <br>
+      <p>Una vez hecho esto el backup se descargará automáticamente.</p>
+      <img src="./img/backup4.png" alt="Backup4">
+      <img src="./img/backup5.png" alt="Backup5">
+      <br>
+      <p>Para restaurar una copia de seguridad deberemos de tener el archivo de copia de seguridad
+        desde donde se restaura la copia. Una vez se tenga el archivo nos dirigimos otra vez a esta ruta:
+        </p>
+      <img src="./img/backup6.png" alt="Backup6">
+      <br>
+      <p>Y seleccionamos la opción de restaurar base de datos:</p>
+      <img src="./img/backup7.png" alt="Backup7">
+      <br>
+      <p>Nos pedirá la contraseña maestra, el archivo de copia y el nombre de la base de datos que le vamos a dar.</p>
+      <img src="./img/backup8.png" alt="Backup8">
+      <br>
+      <p>Si queremos entrar en una base de datos en concreto debemos hacer clic en ella e introducir las credenciales.</p>
+
+      <!-- Sección Conclusiones -->
+      <h2>4. Conclusiones</h2>
+      <p>En conclusión odoo es un software que permite facilitar mucho la gestión de las PYME centralizando procesos en un solo sitio, trabajando a través de módulos, facilitando hacer copias de seguridad. En general es un entorno que ayuda a hacer todo más ameno teniendo plantillas a poder utilizar y ejemplos.</p>
+    </div>
+  </div>
+</body>
+</html>

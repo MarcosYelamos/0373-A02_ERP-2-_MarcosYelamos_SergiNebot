@@ -1,0 +1,94 @@
+/* Estilos generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9fafb;   /* Fondo gris muy claro */
+    color: #1f2937;               /* Gris oscuro */
+    line-height: 1.8;
+  }
+  
+  /* Título principal */
+  h1 {
+    text-align: center;
+    background-color: #3b82f6;    /* Azul claro */
+    color: white;
+    padding: 30px 20px;
+    margin: 0 0 50px 0;
+    font-size: 3rem;
+    letter-spacing: 1px;
+  }
+  
+  /* Subtítulos */
+  h2 {
+    border-left: 6px solid #3b82f6;  /* Azul claro */
+    padding-left: 12px;
+    margin: 50px 0 20px;
+    color: #3b82f6;
+    font-size: 1.8rem;
+  }
+  h3 {
+    border-left: 6px solid #3b82f6;  /* Azul claro */
+    padding-left: 12px;
+    margin: 50px 0 20px;
+    color: #3b82f6;
+    font-size: 1.4rem;
+  }
+  
+  /* Contenedor de columnas */
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    padding: 30px 50px;
+  }
+  
+  /* Secciones con estilo de tarjeta */
+  .section {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  }
+  
+  /* Espaciado entre párrafos */
+  p {
+    margin-bottom: 20px;
+    font-size: 1.05rem;
+  }
+  
+  /* Imágenes estilizadas y separadas */
+  img {
+    display: block;
+    max-width: 100%;
+    margin: 20px auto;
+    border: 1px solid #d1d5db;    /* Gris medio */
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+  }
+  
+  /* Estilo de enlaces */
+  a {
+    color: #3b82f6;               /* Azul claro */
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Texto destacado */
+  strong {
+    color: #111827;
+    font-weight: bold;
+  }
+  
+  /* Adaptación para móviles (breakpoint 700px) */
+  @media (max-width: 700px) {
+    .container {
+      grid-template-columns: 1fr;
+      padding: 20px;
+    }
+  }
+  
